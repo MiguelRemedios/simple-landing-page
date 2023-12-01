@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
   align-items: stretch;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .intro-text-content,
@@ -23,21 +23,21 @@
 .top3-content {
   max-width: 64rem;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .grid-one-content {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .grid-one-heading {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .grid-one-description {
@@ -67,4 +67,19 @@
   top: -4rem;
   left: 0rem;
   transform: rotate(5deg);
+}
+
+.gallery-img {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+  transform: translate(-3%, 3%) scale(1.1) rotate(2deg);
 }
