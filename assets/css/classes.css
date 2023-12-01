@@ -14,6 +14,11 @@
   margin: 0 auto;
   padding: 3rem var(--gap);
 }
+
 .section {
   min-height: 100vh;
+}
+
+.menu-spacing {
+  height: 65px;
 }
