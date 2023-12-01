@@ -53,3 +53,18 @@
   width: 50%;
   left: 25%;
 }
+
+.menu .main-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.menu div svg {
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.menu h1 {
+  color: crimson;
+  margin-left: 1rem;
+}
