@@ -145,3 +145,18 @@
 .form-group ::placeholder {
   color: var(--light-gray-color);
 }
+
+.footer {
+  text-align: center;
+}
+
+.footer p,
+.footer a {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+}
+
+.footer p {
+  margin: 0;
+  padding: 3rem;
+}
