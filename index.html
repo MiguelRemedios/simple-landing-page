@@ -11,9 +11,20 @@
     <title>Landing Page</title>
   </head>
   <body>
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      role="button"
+      aria-label="Close menu"
+    />
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
       <div class="main-content menu-content">
-        <div class="main-logo-wrapper">
+        <div
+          class="main-logo-wrapper"
+          onclick="getElementById('close-menu').checked = false;"
+        >
           <svg
             id="logo-84"
             width="40"
@@ -35,7 +46,7 @@
           </h1>
         </div>
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false;">
             <li><a href="#intro">Intro</a></li>
             <li><a href="#top3">Top3</a></li>
             <li><a href="#grid-one">Grid</a></li>
@@ -273,5 +284,6 @@
         >
       </p>
     </footer>
+    <a href="#" class="back-to-top">↥</a>
   </body>
 </html>
